@@ -1,0 +1,33 @@
+# Node.js dependencies
+**/node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Build output
+**/dist/
+**/build/
+
+# Spring Boot / Java backend artifacts
+**/target/
+**/*.jar
+**/*.war
+**/*.class
+**/*.log
+
+# IDE and system junk
+**/.idea/
+**/.vscode/
+**/.classpath
+**/.project
+**/.settings/
+**/.DS_Store
+
+# Environment variables
+**/.env
+
+# Docker
+**/.docker/
+
+# OS-specific files
+Thumbs.db
+Desktop.ini
