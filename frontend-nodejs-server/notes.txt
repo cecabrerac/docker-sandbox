@@ -1,0 +1,10 @@
+project-root/
+├── Dockerfile
+├── package.json
+├── server.js
+├── public/
+│   ├── index.html
+│   ├── styles.css
+│   └── script.js
+
+
