@@ -8,3 +8,11 @@ project-root/
 │   └── script.js
 
 
+To Build and Run
+
+From the project root:
+
+docker build -t simple-node-frontend .
+docker run -p 3000:3000 simple-node-frontend
+
+Then open your browser at: http://localhost:3000
