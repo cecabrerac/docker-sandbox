@@ -2,13 +2,13 @@
 
 From inside the my-static-app (frontend-nodejs-nginx || root folder) folder:
 
-## Build the image
+## ${\color{orange}Build \space the \space image}$
 
 docker build -t my-static-app-nginx .
 
 \*\* Don't forget the dot at the end of the command
 
-## Run the container
+## ${\color{orange}Run \space the \space container}$
 
 docker run --name=static-app-nginx -d -p 8080:80 my-static-app-ng
 inx
