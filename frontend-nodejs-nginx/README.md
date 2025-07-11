@@ -5,6 +5,7 @@ From inside the my-static-app (frontend-nodejs-nginx || root folder) folder:
 ## Build the image
 
 docker build -t my-static-app-nginx .
+
 \*\* Don't forget the dot at the end of the command
 
 ## Run the container
