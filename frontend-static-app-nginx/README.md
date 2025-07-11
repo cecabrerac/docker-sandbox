@@ -1,6 +1,6 @@
 # Build and Run the Docker Image
 
-From inside the my-static-app (frontend-nodejs-nginx || root folder) folder:
+From inside the my-static-app (frontend-static-app-nginx || root folder) folder:
 
 ## ${\color{orange}Build \space the \space image}$
 
@@ -10,8 +10,7 @@ docker build -t my-static-app-nginx .
 
 ## ${\color{orange}Run \space the \space container}$
 
-docker run --name=static-app-nginx -d -p 8080:80 my-static-app-ng
-inx
+docker run --name=static-app-nginx -d -p 8080:80 my-static-app-nginx
 
 Now, open your browser and go to:
 
