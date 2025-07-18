@@ -9,9 +9,33 @@ function fetchTasks() {
       list.innerHTML = "";
       tasks.forEach((task) => {
         const item = document.createElement("li");
-        item.textContent = `${task.description} [${
-          task.completed ? "✓" : "✗"
-        }]`;
+        item.textContent = task.description;
+        item.classList.add("task-item");
+        if (task.completed) {
+          item.classList.add("completed");
+        }
+
+        // Toggle completion on click
+        item.addEventListener("click", () => {
+          fetch(`${API}/${task.id}`, {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ ...task, completed: !task.completed }),
+          }).then(fetchTasks);
+        });
+
+        // Delete button
+        const deleteBtn = document.createElement("button");
+        deleteBtn.textContent = "Delete";
+        deleteBtn.classList.add("delete-btn");
+        deleteBtn.addEventListener("click", (e) => {
+          e.stopPropagation(); // Prevent toggling when deleting
+          fetch(`${API}/${task.id}`, {
+            method: "DELETE",
+          }).then(fetchTasks);
+        });
+
+        item.appendChild(deleteBtn);
         list.appendChild(item);
       });
     });
