@@ -15,8 +15,16 @@ input {
 
 button {
   padding: 0.5em;
+  margin-left: 10px;
+  background-color: aquamarine;
+  border-radius: 5px;
 }
 
 li {
   margin: 0.5em 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: green;
 }
