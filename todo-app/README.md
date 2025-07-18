@@ -8,31 +8,34 @@ This is a simple Dockerized To-Do application. Clone the repo, build the Docker 
 
 - [Docker](https://www.docker.com/get-started) installed
 
-### 🛠️ Run the App
+### 🛠️ Run the App with Docker Compose
 
-1. **Clone the repo**
+Make sure you have Docker and Docker Compose installed.
+
+1. ### **Clone the repo**
+
    ```bash
-   git clone https://github.com/yourusername/todo-app.git
+   git clone https://github.com/ccabrerac/todo-app.git
    cd todo-app
+
    ```
-2. **Build the Docker image**
-   ```bash
-   docker build -t todo-app .
-   ```
-3. ** Run the container**
-   ```bash
-   docker run -p 3000:3000 todo-app
-   ```
-4. **Access the app**
-   - Open your browser and go to `http://localhost:3000`
-   - You should see the To-Do app running
 
-## 📝 Notes
+2. ### Start the app using Docker Compose
 
-- The app is built using [Spring Boot](https://spring.io/projects/spring-boot) and vanilla javaScript.
-- The app uses [PostgreSQL](https://www.postgresql.org/) as the database.
-- The app uses [Docker](https://www.docker.com/) to run the app in a container.
+   docker-compose up --build
 
-## 📝 License
+3. ### - Access the app Open your browser and go to: http://localhost
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 🧩 Services Overview
+
+### 🔙 Backend (`./backend`)
+
+Handles API logic, task management, and database interactions. Built with Java and Spring Boot.
+
+### 🎨 Frontend (`./frontend`)
+
+User interface built with javaScript, html and css. Connects to backend APIs to display and manage tasks in real time.
+
+### 🗄️ Database (`db`)
+
+Uses PostgreSQL. The database container is defined in `docker-compose.yml` and automatically initialized on startup.
