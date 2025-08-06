@@ -31,3 +31,56 @@ yarn-error.log*
 # OS-specific files
 Thumbs.db
 Desktop.ini
+
+# 🐍 Python
+*.pyc
+__pycache__/
+
+# 🛠️ Django
+db.sqlite3
+*.log
+media/
+
+# 🧪 Tests y cobertura
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+# 📦 Entornos virtuales
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# 📦 Paquetes y distribución
+*.egg-info/
+dist/
+build/
+*.egg
+*.whl
+
+# 🧠 Cachés y compilados
+.mypy_cache/
+.cache/
+*.pot
+
+# 🧠 IDEs y editores
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# 📚 Jupyter Notebooks
+.ipynb_checkpoints/
+
+# 🧪 Otros
+*.bak
+*.spec
+pip-log.txt
+
+# 🐳 Docker
+*.pid
+*.sock
+docker-compose.override.yml
