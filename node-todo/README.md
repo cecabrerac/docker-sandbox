@@ -1,0 +1,3 @@
+- Ejecuta docker-compose up --build
+- Accede a http://localhost:3000/todos
+- Verás un array vacío [] si todo está bien
